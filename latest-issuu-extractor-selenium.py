@@ -5,7 +5,9 @@ from selenium.webdriver import Firefox
 from selenium.webdriver.support.ui import WebDriverWait
 from bs4 import BeautifulSoup
 
-# 1 argument: a url that begins with 'https//issuu.com/',' followed by an ISSUU username
+# Extracts the latest issue's URL and cover image from the specified ISSUU user page using Selenium WebDriver.
+
+# 1 argument: a valid ISSUU username
 if len(sys.argv) == 2:
 
 	# Check that the ISSUU username entered as an argument is valid
